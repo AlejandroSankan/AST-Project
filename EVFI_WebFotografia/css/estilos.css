@@ -1,32 +1,39 @@
+/* DESPLIEGUE EN PANTALLA DE WEB DESKTOP PC*/
+
 *    /*general para toda la Web */
 {
-	margin:0;
+	margin: 0px 10px;
 	background-color: #02010a;
 	font-family: "Dancing Script";
 	text-align: center;
 	color: white;
 	align-content: center;
+
 }
 
 body{
 	font-size: 18px;
+	border: solid #02010a 1px;
+}
+
+img{
+	width: 480px;
+	height: 320px;
+  box-shadow: 2px 2px 0px #02010a;
+	background-color: inherit;
 }
 
 #wrapper
 {
-  margin: 10px;
-	width: 960px auto;
-	margin: 1px;
+	box-sizing: content-box;
+  width: 100% auto;
 }
-
 
 header
 {
-	padding-top: 1px;
-	padding-bottom: 1px;
 	background-color: #5b7989;
 	color: white;
-	height: 70px;
+/*	height: 70px;*/
 }
 
 #TituloWeb
@@ -40,20 +47,25 @@ header
 menu{
 	margin-right: 1%;
 	text-align: right;
-  height: 10px;
+/*  height: 10px auto;*/
+}
+menu, a{
 	background-color:inherit;
 }
 
-article
-{
+
+article{
+	padding: 20px 10px;
 	box-sizing: border-box;
+ 	border: 1px solid inherit;
+ 	display: inline-block;
+	background-color: inherit;
 	float:left;
-	height: 100%;
-	padding-top: 2%;
-	padding-bottom: : 2%;
 	text-align: center;
-	height: 400px;
+	height: 300px auto;
+	color:black;
 }
+
 
 	#columna1
 	{
@@ -63,55 +75,58 @@ article
 	}
 	#columna2, #columna3
 	{
+		border: 1px;
 		background-color: #d5c75f;
 		width: 50%;
 	}
-/*	#columna3
-	{
-		background-color: #3399CC;
-		width: 50%;
-	}
-*/
-@media screen and (max-width: 960px){
 
-	#wrapper
-	{
-		width: 90%;
-		margin: 0 auto;
-	}
-}
 
-@media screen and (max-width: 640px){
-
-	#wrapper
-	{
-		width: 100%;
-		margin: 0 auto;
-	}
-}
 
 @media screen and (max-width: 480px){
 
-#wrapper
+	h1{
+		font-size: 24px;
+
+	}
+	#wrapper
 	{
-		width: 100%;
+		width: 100% auto;
 		margin: 0 auto;
 	}
-#columna1
+
+
+	#TituloWeb
 	{
-	width: 100%;
+		text-align: center;
+		margin-left: 0 auto;
+		margin-right: 0 auto;
+		background-color:inherit;
+		color: white;
 	}
-#columna2
+
+	menu{
+		text-align: center;
+	  height: 10px;
+		background-color:inherit;
+	}
+
+	a{
+		background-color:inherit;
+	}
+
+
+
+	#columna1
 	{
-	width: 100%;
+		width: 100%;
 	}
-#columna3
+	#columna2
+	{
+		width: 100%;
+	}
+	#columna3
 	{
 	width: 100%;
 	}
 
-header
-	{
-	width:100%;
-	}
 }
