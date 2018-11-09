@@ -1,63 +1,64 @@
-/* DESPLIEGUE EN PANTALLA DE WEB DESKTOP PC*/
+/* DESPLIEGUE EN PANTALLA DE DISPOSITIVOS - MOBILE FIRST*/
 
-*    /*general para toda la Web */
-{
-	margin: 0px 10px;
+/* Definiciones generales ------------------------------------------------------*/
+*{
 	background-color: #02010a;
 	font-family: "Dancing Script";
 	text-align: center;
 	color: white;
-	align-content: center;
-
 }
 
-body{
-	font-size: 18px;
-	border: solid #02010a 1px;
+/* Definiciones de clases generales Titulo y Menu -------------------------*/
+#Contenido {
+  width: 100%;
+  margin: 0 auto;
 }
 
-img{
-	width: 480px;
-	height: 320px;
+.Encabezado {
+	display: inline;
+  align-items: center;
+  justify-content: flex-end;
+	background-color: #5b7989;
+	box-sizing: border-box;
+	height: 70px;
+	border-radius: 0px 0px 0px 0px;
+	margin-top: 10px;
+}
+
+.TituloWeb{
+  background-color: inherit;
+	text-align: center;
+	font-size: 32px;
+}
+
+.MenuWeb ul {
+ 	background-color: #5b7989;
+  padding: 0;
+	margin: 0;
+  list-style: none;
+}
+
+.MenuWeb ul a{
+	background-color: inherit;
+  display: inline-block;
+}
+/* F I N - Definiciones de clases generales Titulo y Navegacion --------------------*/
+
+/* Definiciones de Imagen y Sombra de imagen --------------------*/
+
+img {
   box-shadow: 2px 2px 0px #02010a;
 	background-color: inherit;
 }
 
-#wrapper
-{
-	box-sizing: content-box;
-  width: 100% auto;
+picture{
+	height: 90%;
 }
-
-header
-{
-	background-color: #5b7989;
-	color: white;
-/*	height: 70px;*/
-}
-
-#TituloWeb
-{
-	text-align: left;
-	margin-left: 1%;
-	background-color:inherit;
-	color: white;
-}
-
-menu{
-	margin-right: 1%;
-	text-align: right;
-/*  height: 10px auto;*/
-}
-menu, a{
-	background-color:inherit;
-}
-
 
 article{
 	padding: 20px 10px;
 	box-sizing: border-box;
- 	border: 1px solid inherit;
+ 	border: 0px solid inherit;
  	display: inline-block;
 	background-color: inherit;
 	float:left;
@@ -66,67 +67,94 @@ article{
 	color:black;
 }
 
-
-	#columna1
-	{
+.FotoPrincipal {
 	background-color: #82c3a6;
 	width: 100%;
+}
 
-	}
-	#columna2, #columna3
-	{
-		border: 1px;
-		background-color: #d5c75f;
-		width: 50%;
-	}
+.FotoMenu {
+	background-color: #d5c75f;
+	width: 100%;
+}
 
-
-
-@media screen and (max-width: 480px){
-
-	h1{
-		font-size: 24px;
-
-	}
-	#wrapper
-	{
-		width: 100% auto;
-		margin: 0 auto;
-	}
-
-
-	#TituloWeb
-	{
+/* Definiciones de pantalla 900px -------------------------------------------------*/
+@media screen and (min-width: 900px){
+	/* Definiciones generales ------------------------------------------------------*/
+	*{
+		background-color: #02010a;
+		font-family: "Dancing Script";
 		text-align: center;
-		margin-left: 0 auto;
-		margin-right: 0 auto;
-		background-color:inherit;
 		color: white;
 	}
 
-	menu{
+	/* Definiciones de clases generales Titulo y Menu -------------------------*/
+	#Contenido {
+	  width: 100%;
+	  max-width: 900px;
+	  margin: 0 auto;
+	}
+
+	.Encabezado {
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+		background-color: #5b7989;
+		box-sizing: border-box;
+		height: 70px;
+		border-radius: 10px 10px 0px 0px;
+		margin-top: 10px;
+	}
+
+	.TituloWeb{
+	  background-color: inherit;
+		text-align: left;
+		margin-left: 10px;
+		font-size: 24px;
+	}
+
+	.MenuWeb ul {
+	 	background-color: #5b7989;
+	  padding: 0;
+		margin: 0;
+	  list-style: none;
+	}
+
+	.MenuWeb ul a{
+		background-color: inherit;
+		margin-right: 10px;
+	  display: inline-block;
+	}
+	/* F I N - Definiciones de clases generales Titulo y Navegacion --------------------*/
+
+	/* Definiciones de Imagen y Sombra de imagen --------------------*/
+
+	img {
+	  box-shadow: 2px 2px 0px #02010a;
+		background-color: inherit;
+	}
+
+	picture{
+		height: 90%;
+	}
+
+	article{
+		padding: 20px 10px;
+		box-sizing: border-box;
+	 	border: 0px solid inherit;
+	 	display: inline-block;
+		background-color: inherit;
+		float:left;
 		text-align: center;
-	  height: 10px;
-		background-color:inherit;
+		height: 300px auto;
+		color:black;
 	}
 
-	a{
-		background-color:inherit;
-	}
-
-
-
-	#columna1
-	{
+	.FotoPrincipal {
+		background-color: #82c3a6;
 		width: 100%;
 	}
-	#columna2
-	{
-		width: 100%;
-	}
-	#columna3
-	{
-	width: 100%;
-	}
 
-}
+	.FotoMenu {
+		background-color: #d5c75f;
+		width: 50%;
+	}

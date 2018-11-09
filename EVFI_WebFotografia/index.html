@@ -3,36 +3,102 @@
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Alejandro Sankán Tapia">
-    <meta name="viewport" content="width=device-width, user-scalable=yes">
-
+    <meta name="Viewport" content="initial-scale=1.0, width=500px, user-scalable=yes">
     <meta name="description" content="Web que muestra distintas opciones de fotografias y filtros">
+
     <link  href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
     <link href="css/estilos.css" type="text/css" rel="stylesheet">
     <title>Comenzando con la Fotografía</title>
+    <style>
+      img {display: block; margin: 0 auto;}
+    </style>
   </head>
-  <body id="inicio">
-    <header>
-      <h1 id="TituloWeb">Comenzando con la Fotografía</h1>
-      <menu>
-        <a href="#inicio" title="Ir a pagina principal" >Inicio</a>
-        <a href="html/paisajes.html" title="ir a la página de paisajes">Paisajes</a>
-        <a href="html/retratos.html" title="ir a la página de retratos">Retratos</a>
-      </menu>
-    </header>
 
-    <div id="wrapper">
-      <section>
-        <article id="columna1">
-          <img src="img/principal.jpg" alt="Principal">
-        </article>
-        <article id="columna2">
-          <img src="img/paisaje06.jpg" alt="Paisaje" title="Paisajes"><br/>Paisajes
-        </article>
-        <article id="columna3">
-          <img src="img/retrato02.jpg" alt="Retratos de nmascotas" title="Retratos"><br/>Retratos
-        </article>
-      </section>
+  <body  id="Inicio">
 
-<footer>
-</footer>
+    <!– Definicion cuerto de la pagina ******>
+
+    <div id="Contenido">
+
+      <!– Definicion de Header, titulo y Menu de la pagina ******>
+
+      <header class="Encabezado" >
+        <div class="TituloWeb">Comenzando con la Fotografía</div>
+        <nav class="MenuWeb">
+          <ul>
+            <a href="#inicio" title="Ir a pagina principal" >Inicio</a>
+            <a href="html/paisajes.html" title="ir a la página de paisajes">Paisajes</a>
+            <a href="html/retratos.html" title="ir a la página de retratos">Retratos</a>
+          </ul>
+        </nav>
+      </header>
+
+      <!– Cuerpo de la web **************************************>
+
+      <div>
+        <section>
+          <article class="FotoPrincipal">
+            <picture>
+              <source media="(min-width: 900px)" srcset="img/principal.jpg">
+              <source media="(min-width: 465px)" srcset="img/principal.jpg">
+              <img src="img/principal.jpg" alt="Imagen Principal" width="90%">
+            </picture>
+          </article>
+          <article class="FotoMenu">
+            <picture>
+              <source media="(min-width: 900px)" srcset="img/paisaje06.jpg">
+              <source media="(min-width: 465px)" srcset="img/paisaje06.jpg">
+              <img src="img/paisaje06.jpg" alt="Paisajes" width="90%" title="Paisajes"><br/>
+            </picture>
+            <br/>Paisajes>
+          </article>
+          <article class="FotoMenu">
+            <picture>
+              <source media="(min-width: 900px)" srcset="img/retrato02.jpg">
+              <source media="(min-width: 465px)" srcset="img/retrato02.jpg">
+              <img src="img/retrato02.jpg" alt="Retratos" width="90%" title="Retratos">
+            </picture>
+            <br/>Retratos>
+          </article>
+        </section>
+      </div>
+<!– Definición de Pie de Página *******************************>
+  <footer class="PiePagina">
+    <table>
+      <thead>
+        <tr>
+          <th>Código</th>
+          <th>Producto</th>
+          <th>Valor</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>com001</td>
+          <td>Computador</td>
+          <td>100.000</td>
+        </tr>
+        <tr>
+          <td>mou001</td>
+          <td>Mouse</td>
+          <td>20.000</td>
+        </tr>
+        <tr>
+          <td>tec001</td>
+          <td>Teclado</td>
+          <td>15.000</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="2">Total</th>
+          <td>135.000</td>
+        </tr>
+      </tfoot>
+    </table>
+  </footer>
 </div>
+
+</body>
+</html>
