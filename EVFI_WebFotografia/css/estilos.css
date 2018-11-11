@@ -63,7 +63,7 @@ picture{
 .Principal {
 	box-sizing: border-box;
 	background-color: #82c3a6;
-	border: 1px solid  #82c3a6;
+	border: 1px solid  inherit;
 	width: 100%
 }
 
@@ -71,13 +71,9 @@ picture{
 
 .Cuerpo{
 	display: block;
-	min-height: 300px;
-	flex: 1 2 50%;
 }
 
 div [class*="Foto"] {
-	max-height: 900px;
-	float: center;
 	box-sizing: border-box;
 	background-color: #d5c75f;
 	border: 1px solid inherit;
@@ -94,17 +90,37 @@ div [class*="Foto"] {
 #FotoP:hover {
 	-webkit-transform: rotate(10deg);
 	transform: rotate(10deg);
+	box-shadow: 2px 2px 0px #82c3a6;
 }
 
 .FotoRetrato {
 	order: 2;
 	width: 100%
-}
+}a
 
 #FotoR:hover {
 	-webkit-transform:translate(20px, -5px);
 	transform:translate(20px, -5px);
+	box-shadow: 2px 2px 0px #82c3a6;
 }
+
+.MatFotos {
+	width: 100%;
+}
+
+.Efecto01{     /* Blur */
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+.Efecto02{     /*Escala de Gris*/
+  -webkit-filter:grayscale(100%);
+  filter:grayscale(100%);
+}
+.Efecto03{     /* Sephia */
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
 
 /* --- Definiciones Pie de Pagina ----- */
 
@@ -118,36 +134,30 @@ div [class*="Foto"] {
 	}
 
 .InfPiePagina {
-	background-color: #C6d5c5;
+	background-color: inherit;
 	width: 90%;
 	border-radius: 0px 0px 10px 10px;
 	padding-bottom: 10px;
 }
 
 h1, li{
-	background-color: #C6d5c5;
+	background-color: inherit;
 	text-align: left;
 	margin-left: 15%;
 	list-style: none;
 	color: black;
 }
+
 h1{
 	font-size: 30px;
 }
 
-/*--- Redes Sociales --: Obtenido de internet.-*/
-
-
 .social, a {
-	background-color: #C6d5c5;
+	background-color: inherit;
 	margin-left: 2px;
 	color: inherit;
 }
 
-a  {
-	background-color: inherit;
-
-}
 
 /* ============================================================================*/
 /* =================== DEFINICIONES PANTALLA 900PX ============================*/
@@ -183,6 +193,16 @@ a  {
 	.Cuerpo{
 		display: flex;
 	}
+	.CuerpoFotos{
+		display: flex;
+		flex-flow: wrap;
+	}
+
+	/* Paisajes */
+	.MatFotos {
+		width: 33%;
+	}
+
 
 
 /* --- Definiciones Pie de Pagina ----- */
@@ -199,5 +219,6 @@ a  {
 	h1, li{
 		text-align: left;
 	}
+
 
 }

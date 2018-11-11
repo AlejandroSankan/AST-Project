@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="author" content="Alejandro Sankán Tapia">
     <meta name="Viewport" content="initial-scale=1.0, width=500px, user-scalable=yes">
-    <meta name="description" content="Web que muestra distintas opciones de fotografias y filtros">
+    <meta name="description" content="Trabajo Evaluacion Final de CSS y Diseño Web Responsive">
 
     <link  href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
     <link href="css/estilos.css" type="text/css" rel="stylesheet">
@@ -15,9 +15,6 @@
   </head>
 
   <body  id="Inicio">
-
-    <!– Definicion cuerto de la pagina ******>
-
     <div id="Contenido">
 
       <!– Definicion de Header, titulo y Menu de la pagina ******>
@@ -26,14 +23,14 @@
         <div class="TituloWeb">Comenzando con la Fotografía</div>
         <div class="MenuWeb">
           <ul>
-            <a class="SinSubrayado" href="index.html" title="Ir a pagina principal" >Inicio</a>
+            <a href="index.html" title="Ir a pagina principal" class="SinSubrayado" >Inicio</a>
             <a href="html/paisajes.html" title="ir a la página de paisajes">Paisajes</a>
             <a href="html/retratos.html" title="ir a la página de retratos">Retratos</a>
           </ul>
         </div>
       </header>
 
-      <!– Cuerpo de la web **************************************>
+      <!– Cuerpo de la pagina ***********************************>
 
       <div class="Principal">
         <picture>
@@ -46,15 +43,15 @@
         <div class="FotoPaisaje">
           <a href="html/paisajes.html" title="ir a la página de paisajes">
           <picture>
-            <source media="(min-width: 900px)" srcset="img/paisaje06-1024x768.jpg">
-            <img class="Fotos" id="FotoP" src="img/paisaje06-640x480.jpg" alt="Paisajes" width="100%" title="Paisajes">
+            <source media="(min-width: 900px)" srcset="img/paisaje/foto06-1024x768.jpg">
+            <img class="Fotos" id="FotoP" src="img/paisaje/foto06-640x480.jpg" alt="Paisajes" width="100%" title="Paisajes">
           </picture>Paisajes</a>
         </div>
         <div class="FotoRetrato">
           <a href="html/retratos.html" title="ir a la página de retratos">
           <picture>
-            <source media="(min-width: 900px)" srcset="img/retrato02-1024x768.jpg">
-            <img class="Fotos"  id="FotoR" src="img/retrato02-640x480.jpg" alt="Retratos" width="100%" title="Retratos">
+            <source media="(min-width: 900px)" srcset="img/retrato/foto02-1024x768.jpg">
+            <img class="Fotos"  id="FotoR" src="img/retrato/foto02-640x480.jpg" alt="Retratos" width="100%" title="Retratos">
           </picture>Retratos</a>
         </div>
       </div>
@@ -64,9 +61,9 @@
       <div class="PiePagina">
         <section class="InfPiePagina">
           <h1>Contactos</h1>
-          <li>www.miejemplo.com</li>
-          <li>La Casona #5X, </br>Santa Cruz, Bolivia</li>
-          <li>cel. 69201681</li>
+          <li>Mail: asankan@msn.com</li>
+          <li>Dir: La Casona #12B, </br>Santa Cruz, Bolivia</li>
+          <li>cel. (591) 69201681</li>
         </section>
         <section class="InfPiePagina">
           <h1>Términos</h1>
@@ -95,6 +92,8 @@
           <li>Alejandro Sankán © 2018</li>
           <li>Las imagenes pueden estar sujetas a derecho de autor</li>
         </section>
+
+
       </div>
     </div>
   </body>

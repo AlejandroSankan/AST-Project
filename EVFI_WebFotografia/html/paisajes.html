@@ -2,9 +2,113 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+    <meta name="author" content="Alejandro Sankán Tapia">
+    <meta name="Viewport" content="initial-scale=1.0, width=500px, user-scalable=yes">
+    <meta name="description" content="Web que muestra distintas opciones de fotografias y filtros">
 
+    <link  href='https://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+    <link href="../css/estilos.css" type="text/css" rel="stylesheet">
+    <title>Comenzando con los Foto-</title>
+    <style>
+      img {display: block; margin: 0 auto;}
+    </style>
+  </head>
+
+  <body  id="Inicio">
+    <div id="Contenido">
+
+      <!– Definicion de Header, titulo y Menu de la pagina ******>
+
+      <header class="Encabezado" >
+        <div class="TituloWeb">Comenzando con los Foto-</div>
+        <div class="MenuWeb">
+          <ul>
+            <a href="../index.html" title="Ir a pagina principal" >Inicio</a>
+            <a href="paisajes.html" title="ir a la página de Foto-" class="SinSubrayado" >Paisajes</a>
+            <a href="retratos.html" title="ir a la página de retratos">Retratos</a>
+          </ul>
+        </div>
+      </header>
+
+      <!– Cuerpo de la web **************************************>
+
+      <div class="CuerpoFotos">
+        <div class="MatFotos">
+          <picture>
+            <source media="(min-width: 900px)" srcset="../img/paisaje/foto01-1024x768.jpg">
+            <img class="Fotos Efecto01" src="../img/paisaje/foto01-640x480.jpg" alt="Foto 1" width="100%" title="Foto-01">
+          </picture>
+        </div>
+        <div class="MatFotos">
+          <picture>
+            <source media="(min-width: 900px)" srcset="../img/paisaje/foto02-1024x768.jpg">
+            <img class="Fotos  Efecto02" src="../img/paisaje/foto02-640x480.jpg" alt="Foto 2" width="100%" title="Foto-02">
+          </picture>
+        </div>
+        <div class="MatFotos">
+          <picture>
+            <source media="(min-width: 900px)" srcset="../img/paisaje/foto03-1024x768.jpg">
+            <img class="Fotos Efecto03" src="../img/paisaje/foto03-640x480.jpg" alt="Foto 3" width="100%" title="Foto-03">
+          </picture>
+        </div>
+        <div class="MatFotos">
+          <picture>
+            <source media="(min-width: 900px)" srcset="../img/paisaje/foto04-1024x768.jpg">
+            <img class="Fotos Efecto02" src="../img/paisaje/foto04-640x480.jpg" alt="Foto 4" width="100%" title="Foto-04">
+          </picture>
+        </div>
+        <div class="MatFotos">
+          <picture>
+            <source media="(min-width: 900px)" srcset="../img/paisaje/foto05-1024x768.jpg">
+            <img class="Fotos " src="../img/paisaje/foto05-640x480.jpg" alt="Foto 5" width="100%" title="Foto-05">
+          </picture>
+        </div>
+        <div class="MatFotos">
+          <picture>
+            <source media="(min-width: 900px)" srcset="../img/paisaje/foto06-1024x768.jpg">
+            <img class="Fotos Efecto02" src="../img/paisaje/foto06-640x480.jpg" alt="Foto 6" width="100%" title="Foto-06">
+          </picture>
+        </div>
+
+      </div>
+
+      <!– Definición de Pie de Página *******************************>
+
+      <div class="PiePagina">
+        <section class="InfPiePagina">
+          <h1>Contactos</h1>
+          <li>Mail: asankan@msn.com</li>
+          <li>Dir: La Casona #12B, </br>Santa Cruz, Bolivia</li>
+          <li>cel. (591) 69201681</li>
+        </section>
+        <section class="InfPiePagina">
+          <h1>Términos</h1>
+          <li>Conoce nuestros terminos y condiciones</li>
+        </section>
+        <section class="InfPiePagina">
+          <h1>Redes Sociales</h1>
+          <li>
+            <a class="Social" href="http://www.facebook.com" target="_blank">
+            <img class="Social"  src="../ico/facebook-200x200.jpg" alt="Facebook" width="20px" align="left">
+            Facebook</a>
+          </li>
+        	<li>
+            <a class="Social" href="http://www.googleplus.com" target="_blank">
+            <img class="Social"  src="../ico/Googleplus-200x200.png" alt="GooglePlus" width="20px" align="left">
+            Google+</a>
+          </li>
+          <li>
+            <a class="Social" href="http://www.pinterest.com" target="_blank">
+            <img class="Social" src="../ico/Pinterest-200x200.jpg" alt="Pinterest" width="20px" align="Left" >
+            Pinterest</a>
+          </li>
+        </section>
+        <section class="InfPiePagina">
+          <h1>Derechos</h1>
+          <li>Alejandro Sankán © 2018</li>
+          <li>Las imagenes pueden estar sujetas a derecho de autor</li>
+        </section>
+      </div>
+    </div>
   </body>
 </html>
