@@ -24,81 +24,78 @@
 
       <header class="Encabezado" >
         <div class="TituloWeb">Comenzando con la Fotografía</div>
-        <nav class="MenuWeb">
+        <div class="MenuWeb">
           <ul>
-            <a href="#inicio" title="Ir a pagina principal" >Inicio</a>
+            <a class="SinSubrayado" href="index.html" title="Ir a pagina principal" >Inicio</a>
             <a href="html/paisajes.html" title="ir a la página de paisajes">Paisajes</a>
             <a href="html/retratos.html" title="ir a la página de retratos">Retratos</a>
           </ul>
-        </nav>
+        </div>
       </header>
 
       <!– Cuerpo de la web **************************************>
 
-      <div>
-        <section>
-          <article class="FotoPrincipal">
-            <picture>
-              <source media="(min-width: 900px)" srcset="img/principal.jpg">
-              <source media="(min-width: 465px)" srcset="img/principal.jpg">
-              <img src="img/principal.jpg" alt="Imagen Principal" width="90%">
-            </picture>
-          </article>
-          <article class="FotoMenu">
-            <picture>
-              <source media="(min-width: 900px)" srcset="img/paisaje06.jpg">
-              <source media="(min-width: 465px)" srcset="img/paisaje06.jpg">
-              <img src="img/paisaje06.jpg" alt="Paisajes" width="90%" title="Paisajes"><br/>
-            </picture>
-            <br/>Paisajes>
-          </article>
-          <article class="FotoMenu">
-            <picture>
-              <source media="(min-width: 900px)" srcset="img/retrato02.jpg">
-              <source media="(min-width: 465px)" srcset="img/retrato02.jpg">
-              <img src="img/retrato02.jpg" alt="Retratos" width="90%" title="Retratos">
-            </picture>
-            <br/>Retratos>
-          </article>
+      <div class="Principal">
+        <picture>
+          <source media="(min-width: 900px)" srcset="img/principal-1024x533.jpg">
+          <img class="Fotos" src="img/principal-640x333.jpg" alt="Imagen Principal" width="100%">
+        </picture>
+      </div>
+
+      <div class="Cuerpo">
+        <div class="FotoPaisaje">
+          <a href="html/paisajes.html" title="ir a la página de paisajes">
+          <picture>
+            <source media="(min-width: 900px)" srcset="img/paisaje06-1024x768.jpg">
+            <img class="Fotos" id="FotoP" src="img/paisaje06-640x480.jpg" alt="Paisajes" width="100%" title="Paisajes">
+          </picture>Paisajes</a>
+        </div>
+        <div class="FotoRetrato">
+          <a href="html/retratos.html" title="ir a la página de retratos">
+          <picture>
+            <source media="(min-width: 900px)" srcset="img/retrato02-1024x768.jpg">
+            <img class="Fotos"  id="FotoR" src="img/retrato02-640x480.jpg" alt="Retratos" width="100%" title="Retratos">
+          </picture>Retratos</a>
+        </div>
+      </div>
+
+      <!– Definición de Pie de Página *******************************>
+
+      <div class="PiePagina">
+        <section class="InfPiePagina">
+          <h1>Contactos</h1>
+          <li>www.miejemplo.com</li>
+          <li>La Casona #5X, </br>Santa Cruz, Bolivia</li>
+          <li>cel. 69201681</li>
+        </section>
+        <section class="InfPiePagina">
+          <h1>Términos</h1>
+          <li>Conoce nuestros terminos y condiciones</li>
+        </section>
+        <section class="InfPiePagina">
+          <h1>Redes Sociales</h1>
+          <li>
+            <a class="Social" href="http://www.facebook.com" target="_blank">
+            <img class="Social"  src="ico/facebook-200x200.jpg" alt="Facebook" width="20px" align="left">
+            Facebook</a>
+          </li>
+        	<li>
+            <a class="Social" href="http://www.googleplus.com" target="_blank">
+            <img class="Social"  src="ico/Googleplus-200x200.png" alt="GooglePlus" width="20px" align="left">
+            Google+</a>
+          </li>
+          <li>
+            <a class="Social" href="http://www.pinterest.com" target="_blank">
+            <img class="Social" src="ico/Pinterest-200x200.jpg" alt="Pinterest" width="20px" align="Left" >
+            Pinterest</a>
+          </li>
+        </section>
+        <section class="InfPiePagina">
+          <h1>Derechos</h1>
+          <li>Alejandro Sankán © 2018</li>
+          <li>Las imagenes pueden estar sujetas a derecho de autor</li>
         </section>
       </div>
-<!– Definición de Pie de Página *******************************>
-  <footer class="PiePagina">
-    <table>
-      <thead>
-        <tr>
-          <th>Código</th>
-          <th>Producto</th>
-          <th>Valor</th>
-          <th>Valor</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>com001</td>
-          <td>Computador</td>
-          <td>100.000</td>
-        </tr>
-        <tr>
-          <td>mou001</td>
-          <td>Mouse</td>
-          <td>20.000</td>
-        </tr>
-        <tr>
-          <td>tec001</td>
-          <td>Teclado</td>
-          <td>15.000</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <th colspan="2">Total</th>
-          <td>135.000</td>
-        </tr>
-      </tfoot>
-    </table>
-  </footer>
-</div>
-
-</body>
+    </div>
+  </body>
 </html>
