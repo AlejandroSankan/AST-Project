@@ -10,6 +10,28 @@ a.SinSubrayado:link{
 	text-decoration: none;
 }
 
+/* Efecto de animacion de pagina */
+
+#Inicio {
+	-webkit-animation-duration: 0.5s;
+	animation-duration: 0.5s;
+	-webkit-animation-name: slidein;
+	animation-name: slidein;
+}
+
+@-webkit-keyframes slidein{
+	0% { margin-top: 150%;}
+  60%{ margin-top: -5%;}
+	100% { margin-top: 0;}
+}
+
+@keyframes slidein{
+	0% { margin-top: 150%;}
+  60%{ margin-top: -5%;}
+	100% { margin-top: 0;}
+}
+
+
 #Contenido {
 	width: 100%;
 	max-width: 900px;
@@ -120,6 +142,8 @@ div [class*="Foto"] {
   -webkit-filter: sepia(90%);
   filter: sepia(90%);
 }
+
+
 
 
 /* --- Definiciones Pie de Pagina ----- */
