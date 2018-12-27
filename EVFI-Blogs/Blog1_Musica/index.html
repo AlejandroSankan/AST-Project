@@ -2,9 +2,60 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
+    <meta name="author" content="Alejandro Sankán Tapia">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Uso de framework Bootstrap, modo offline">
+    <title>Blog de Fotografia</title>
 
-  </body>
+    <!-- Enlace a bootstrap local -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+
+  </head>
+<body>
+
+  <!-- ajusta las Columna lg-xx por el numero de Columnas y debe dar 12 . idem para todo -->
+  <!-- ejemplo col-lg-4.. se usa para 4 Columnas.. esto es 4 x 3 = 12 -->
+  <!--         col-lg-2.. se usa para 6 Columnas.. esto es 2 x 6 = 12 -->
+
+  <!-- lg-xx (large) colapsa cuando el ancho del navegador sea inferior a 1200px -->
+
+  <section>
+    <div class="row">
+      <div class="col-lg-4" style="background-color:yellow">Columna 1</div>
+      <div class="col-lg-4" style="background-color:blue">Columna 2</div>
+      <div class="col-lg-4" style="background-color:green">Columna 3</div>
+    </div>
+  </section>
+
+  <!-- md-xx (medium) colapsa cuando el ancho del navegador sea inferior a 992px -->
+  <section>
+    <div class="row">
+      <div class="col-md-4" style="background-color:yellow">Columna 1</div>
+      <div class="col-md-4" style="background-color:blue">Columna 2</div>
+      <div class="col-md-4" style="background-color:green">Columna 3</div>
+    </div>
+  </section>
+
+  <!-- sm-xx (small) colapsa cuando el ancho del navegador sea inferior a 768px -->
+  <section>
+    <div class="row">
+      <div class="col-sm-4" style="background-color:blue">Columna 1</div>
+      <div class="col-sm-4" style="background-color:red">Columna 2</div>
+      <div class="col-sm-4" style="background-color:white">Columna 3</div>
+    </div>
+  </section>
+
+  <!-- xs-xx Impide que las Columnas colapsen -->
+  <section>
+    <div class="row">
+      <div class="col-4" style="background-color:red">Columna 1</div>
+      <div class="col-4" style="background-color:yellow">Columna 2</div>
+      <div class="col-4" style="background-color:blue">Columna 3</div>
+    </div>
+  </section>
+
+  <footer>
+  </footer>
+</body>
+
 </html>
