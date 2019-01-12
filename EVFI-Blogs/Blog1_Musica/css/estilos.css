@@ -4,8 +4,7 @@
 		text-align: center;
 		color: black;
 		font-size: 14px;
-    border-left: 15px;
-    border: 1px solid #800000;
+    border: 2px solid inherit;
 
 }
 
@@ -33,6 +32,13 @@
   background-color:#800000;
   color:black;
   align-content: center;
+}
+
+.socialStyle{
+  background-color: White;
+	margin-left: 0px;
+	color: inherit;
+  width: 40px;
 }
 
 .navStyle {
