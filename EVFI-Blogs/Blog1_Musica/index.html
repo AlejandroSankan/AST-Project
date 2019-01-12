@@ -9,53 +9,57 @@
 
     <!-- Enlace a bootstrap local -->
     <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link href="css/estilos.css" type="text/css" rel="stylesheet">
 
   </head>
-<body>
+  <body >
+    <div class="row" > <!-- Cabecera. Se dejan los margenes necesarios. -->
+      <div class="col-lg-2 pagStyle"></div>
+      <div class="col-lg-8 pagStyle">
+        <!-- Logo y menu de redes-->
+        <div class="row" >
+          <div class="col-lg-12" style="background-color: White" >
+            <div class="container">
+              <img src="medios/musica.jpg" alt="musica" class="img-thumbnail float-left" width="100px">
+            </div>
+            menu Redes
+          </div>
+        </div>
+    <!-- menu general -->
+        <div class="row" >
+          <div class="col-lg-12 navStyle">
 
-  <!-- ajusta las Columna lg-xx por el numero de Columnas y debe dar 12 . idem para todo -->
-  <!-- ejemplo col-lg-4.. se usa para 4 Columnas.. esto es 4 x 3 = 12 -->
-  <!--         col-lg-2.. se usa para 6 Columnas.. esto es 2 x 6 = 12 -->
+            <nav class="navbar navStyle">
+              <div class="content navbar-expand-sm">
+                <ul class="navbar-nav nav-fill justify-content-center">
+                  <li class="nav-item active"><a class="nav-link navStyle" href="#">Inicio</a></li>
+                  <li class="nav-item"><a class="nav-link navStyle" href="#">Grupos</a></li>
+                  <li class="nav-item"><a class="nav-link navStyle" href="#">Artistas</a></li>
+                  <li class="nav-item"><a class="nav-link navStyle" href="#">Top 10</a></li>
+                  <li class="nav-item"><a class="nav-link navStyle" href="#">Letras</a></li>
+                  <li class="nav-item"><a class="nav-link navStyle" href="#">Acordes</a></li>
+                </ul>
+              </div>
+            </nav>
 
-  <!-- lg-xx (large) colapsa cuando el ancho del navegador sea inferior a 1200px -->
+          </div>
+        </div>
 
-  <section>
-    <div class="row">
-      <div class="col-lg-4" style="background-color:yellow">Columna 1</div>
-      <div class="col-lg-4" style="background-color:blue">Columna 2</div>
-      <div class="col-lg-4" style="background-color:green">Columna 3</div>
+      </div>
+      <div class="col-lg-2 pagStyle"></div>
     </div>
-  </section>
 
-  <!-- md-xx (medium) colapsa cuando el ancho del navegador sea inferior a 992px -->
-  <section>
-    <div class="row">
-      <div class="col-md-4" style="background-color:yellow">Columna 1</div>
-      <div class="col-md-4" style="background-color:blue">Columna 2</div>
-      <div class="col-md-4" style="background-color:green">Columna 3</div>
+    <div class="row" > <!-- Cuerpo general. Se dejan los margenes necesarios. -->
+      <div class="col-lg-2"  style="background-color: #800000"></div>
+        <div class="col-lg-8" style="background-color: #800000">
+          <div class="row">
+            <div class="col-lg-7" style="background-color: #e6e6e6" >Articulos</div>
+            <div class="col-lg-5" style="background-color: #e6e6e6" >Busqueda</div>
+          </div>
+        </div>
+      <div class="col-lg-2" style="background-color:#800000"></div>
     </div>
-  </section>
 
-  <!-- sm-xx (small) colapsa cuando el ancho del navegador sea inferior a 768px -->
-  <section>
-    <div class="row">
-      <div class="col-sm-4" style="background-color:blue">Columna 1</div>
-      <div class="col-sm-4" style="background-color:red">Columna 2</div>
-      <div class="col-sm-4" style="background-color:white">Columna 3</div>
-    </div>
-  </section>
-
-  <!-- xs-xx Impide que las Columnas colapsen -->
-  <section>
-    <div class="row">
-      <div class="col-4" style="background-color:red">Columna 1</div>
-      <div class="col-4" style="background-color:yellow">Columna 2</div>
-      <div class="col-4" style="background-color:blue">Columna 3</div>
-    </div>
-  </section>
-
-  <footer>
-  </footer>
-</body>
+  </body>
 
 </html>
