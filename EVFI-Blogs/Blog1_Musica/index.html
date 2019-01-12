@@ -14,54 +14,88 @@
   </head>
   <body >
     <div class="row" > <!-- Cabecera. Se dejan los margenes necesarios. -->
-      <div class="col-lg-2 pagStyle"></div>
-      <div class="col-lg-8 pagStyle">
+      <div class="col-md-2 pagStyle"></div>
+      <div class="col-md-8">
         <!-- Logo y menu de redes-->
-        <div class="row align-items-center" >
-          <div class="col-lg-6" style="background-color: White" >
-            <div class="container" style="background-color: White" >
-              <img src="medios/musica.jpg" alt="musica" class="img-thumbnail float-left" width="100px">
+        <div class="row align-items-end socialColor" >
+          <div class="col-md-4 socialColor">
+            <div class="container headerStyle" >
+              <img src="medios/musica.jpg" alt="musica" class="rounded-circle float-left" width="100px">
             </div>
           </div>
-
-          <div class="col-lg-6" style="background-color: White" >
-            <div class="container" style="background-color: White" >
-              <a href="http://www.facebook.com" target="_blank">
-                <img class="rounded socialStyle" src="ico/facebook-200x200.jpg" alt="Facebook">
-              </a>
-              <a href="http://www.googleplus.com" target="_blank">
-                <img class="rounded socialStyle" src="ico/Googleplus-200x200.png" alt="GooglePlus">
-              </a>
-              <a href="http://www.pinterest.com" target="_blank">
-                <img class="rounded socialStyle" src="ico/Pinterest-200x200.jpg" alt="Pinterest">
-              </a>
-            </div>
+          <div class="col-md-8 socialColor">
+            <nav class="navbar ajusteNav headerStyle">
+              <ul class="nav ajusteNav socialColor">
+                <li class="nav-item socialColor">
+                  <a href="http://www.youtube.com" target="_blank">
+                    <img class="rounded socialStyle" src="ico/youtube-200x200.png" alt="Youtube">
+                  </a>
+                  <a href="http://www.facebook.com" target="_blank">
+                    <img class="rounded socialStyle" src="ico/facebook-200x200.jpg" alt="Facebook">
+                  </a>
+                  <a href="http://www.instagram.com" target="_blank">
+                    <img class="rounded socialStyle" src="ico/instagram-200x200.jpg" alt="Instagram">
+                  </a>
+                  <a href="http://www.pinterest.com" target="_blank">
+                    <img class="rounded socialStyle" src="ico/Pinterest-200x200.jpg" alt="Pinterest">
+                  </a>
+                  <a href="http://www.twitter.com" target="_blank">
+                    <img class="rounded socialStyle" src="ico/twitter-200x200.png" alt="Twitter">
+                  </a>
+                  <a href="http://www.googleplus.com" target="_blank">
+                    <img class="rounded socialStyle" src="ico/Googleplus-200x200.png" alt="GooglePlus">
+                  </a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
-    <!-- menu general -->
+        <!-- menu general -->
 
         <div class="row align-items-center" >
-          <div class="col-lg-2 navStyle"><a class="navStyle" href="#">Inicio</a></div>
-          <div class="col-lg-2 navStyle"><a class="navStyle" href="#">Grupos</a></div>
-          <div class="col-lg-2 navStyle"><a class="navStyle" href="#">Artistas</a></div>
-          <div class="col-lg-2 navStyle"><a class="navStyle" href="#">Top 10</a></div>
-          <div class="col-lg-2 navStyle"><a class="navStyle" href="#">Letras</a></div>
-          <div class="col-lg-2 navStyle"><a class="navStyle" href="#">Acordes</a></div>
+          <div class="col-md-2 navStyle"><a class="navStyle" href="#">Inicio</a></div>
+          <div class="col-md-2 navStyle"><a class="navStyle" href="#">Grupos</a></div>
+          <div class="col-md-2 navStyle"><a class="navStyle" href="#">Artistas</a></div>
+          <div class="col-md-2 navStyle"><a class="navStyle" href="#">Top 10</a></div>
+          <div class="col-md-2 navStyle"><a class="navStyle" href="#">Letras</a></div>
+          <div class="col-md-2 navStyle"><a class="navStyle" href="#">Acordes</a></div>
         </div>
 
       </div>
-      <div class="col-lg-2 pagStyle"></div>
+      <div class="col-md-2 pagStyle"></div>
     </div>
 
     <div class="row" > <!-- Cuerpo general. Se dejan los margenes necesarios. -->
-      <div class="col-lg-2"  style="background-color: #800000"></div>
-        <div class="col-lg-8" style="background-color: #800000">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
           <div class="row">
-            <div class="col-lg-7" style="background-color: #e6e6e6" >Articulos</div>
-            <div class="col-lg-5" style="background-color: #e6e6e6" >Busqueda</div>
+            <div class="col-md-7">
+              <div class="row"> <!-- Articulos. -->
+                <div class="col-md-8">
+                  <h1>Articulo 1</h1>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col-md-4">
+                  <div class="container headerStyle" >
+                    <img src="medios/Queen.jpg" alt="musica" class="rounded float-center" width="100%">
+                  </div>
+                </div>
+              </div>
+              <div class="row" >
+                <div class="col-md-3"></div>
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <label for="Comentario">Comentario</label>
+                    <textarea name="Comentario" rows="2" class="form-control"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 cuerpoColor" >Busqueda</div>
           </div>
+
         </div>
-      <div class="col-lg-2" style="background-color:#800000"></div>
+      <div class="col-md-2 pagStyle"></div>
     </div>
 
   </body>
