@@ -60,10 +60,20 @@
   color:black;
 }
 
+.socialColor {
+  background-color: White;
+}
+
+.cuerpoColor {
+  background-color: White;
+}
 
 
-
-
+.socialStyle{
+  margin-left: 0px;
+	color: inherit;
+  width: 30px;
+}
 
 .navStyle {
   background-color:#ff9900;
