@@ -3,7 +3,7 @@
 		background-color: #800000;
 		text-align: center;
 		color: black;
-		font-size: 14px;
+		font-size: 12px;
     border: 0px solid inherit;
 }
 
@@ -22,9 +22,12 @@
 
 [class*="col-"] {
     float: center;
-    padding: 4px;
+    padding: 0px;
 }
 
+.imgStyle {
+  margin-left: 20px;
+}
 .fondoColor {
   background-color:  #800000;
 }
@@ -47,73 +50,19 @@
   justify-content: center;
 }
 
-/*
-.pagStyle {
-  background-color:#800000;
-  color:black;
-  align-content: center;
-}
-
-.headerStyle{
-  background-color:white;
-  margin-left: 10px;
-  color:black;
-}
-
-.socialColor {
-  background-color: White;
-}
-
-.cuerpoColor {
-  background-color: White;
-}
-
-
-.socialStyle{
-  margin-left: 0px;
-	color: inherit;
-  width: 30px;
-}
-
 .navStyle {
   background-color:#ff9900;
   color:#800000;
 }
 
 
-h1, p {
-  margin: 10px;
-  background-color:white;
-  color:black;
-}
+/* ================================================================================== DEFINICIONES PANTALLA 900PX ===============================================================*/
 
-p{
-  text-align: justify;
-}
-
-*/
-
-
-/* ============================================================================*/
-/* =================== DEFINICIONES PANTALLA 900PX ============================*/
-/* ============================================================================*/
-
-@media screen and (min-width: 720px){
+@media screen and (min-width: 900px){
 	/* Definiciones generales ----*/
-
-	#Contenido {
-		max-width: 900px;
-		margin: 10px auto;
-	}
 
   .ajusteNav {
     margin-right: 10px;
     justify-content: flex-end;
     box-sizing: content-box;
-  }
-
-  .headerStyle{
-    background-color:white;
-    margin-left: 0px;
-    color:black;
   }
