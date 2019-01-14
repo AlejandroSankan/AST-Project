@@ -4,9 +4,7 @@
 		text-align: center;
 		color: black;
 		font-size: 14px;
-    border-left: 15px;
-    border: 1px solid #800000;
-
+    border: 0px solid inherit;
 }
 
 .col-1 {width: 8.33%;}
@@ -22,20 +20,77 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-
 [class*="col-"] {
     float: center;
-    padding: 5px;
-    border: 0px solid #800000;
+    padding: 4px;
 }
 
+h1, p {
+  margin: 10px;
+  background-color:white;
+  color:black;
+}
+
+p{
+  text-align: justify;
+}
 .pagStyle {
   background-color:#800000;
   color:black;
   align-content: center;
 }
 
+.headerStyle{
+  background-color:white;
+  margin-left: 10px;
+  color:black;
+}
+
+.socialColor {
+  background-color: White;
+}
+
+.cuerpoColor {
+  background-color: White;
+}
+
+
+.socialStyle{
+  margin-left: 0px;
+	color: inherit;
+  width: 30px;
+}
+
 .navStyle {
   background-color:#ff9900;
   color:#800000;
 }
+
+.ajusteNav {
+  justify-content: center;
+}
+
+
+
+/* ============================================================================*/
+/* =================== DEFINICIONES PANTALLA 900PX ============================*/
+/* ============================================================================*/
+
+@media screen and (min-width: 720px){
+	/* Definiciones generales ----*/
+
+	#Contenido {
+		max-width: 900px;
+		margin: 10px auto;
+	}
+
+  .ajusteNav {
+    justify-content: flex-end;
+
+  }
+
+  .headerStyle{
+    background-color:white;
+    margin-left: 0px;
+    color:black;
+  }

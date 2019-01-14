@@ -12,52 +12,92 @@
     <link href="css/estilos.css" type="text/css" rel="stylesheet">
 
   </head>
-  <body >
-    <div class="row" > <!-- Cabecera. Se dejan los margenes necesarios. -->
-      <div class="col-lg-2 pagStyle"></div>
-      <div class="col-lg-8 pagStyle">
+  <body>
+    <div class="row socialColor"> <!-- Cabecera. Se dejan los margenes necesarios. -->
+      <div class="col-md-2 fondoColor"></div>
+      <div class="col-md-8" >
         <!-- Logo y menu de redes-->
-        <div class="row" >
-          <div class="col-lg-12" style="background-color: White" >
-            <div class="container">
-              <img src="medios/musica.jpg" alt="musica" class="img-thumbnail float-left" width="100px">
+        <div class="row justify-content-center">
+
+          <div class="col-md-4 socialColor">
+            <div class="container" style="margin:20px">
+              <img src="medios/musica.jpg" alt="musica" class="rounded-circle float-left" width="100px">
             </div>
-            menu Redes
+          </div>
+
+          <div class="col-md-8 socialColor">
+            <ul class="nav">
+              <li class="nav-item align-bottom">
+                <a href="http://www.youtube.com" target="_blank">
+                  <img class="rounded socialStyle" src="ico/youtube-200x200.png" alt="Youtube">
+                </a>
+                <a href="http://www.facebook.com" target="_blank">
+                  <img class="rounded socialStyle" src="ico/facebook-200x200.jpg" alt="Facebook">
+                </a>
+                <a href="http://www.instagram.com" target="_blank">
+                  <img class="rounded socialStyle" src="ico/instagram-200x200.jpg" alt="Instagram">
+                </a>
+                <a href="http://www.pinterest.com" target="_blank">
+                  <img class="rounded socialStyle" src="ico/Pinterest-200x200.jpg" alt="Pinterest">
+                </a>
+                <a href="http://www.twitter.com" target="_blank">
+                  <img class="rounded socialStyle" src="ico/twitter-200x200.png" alt="Twitter">
+                </a>
+                <a href="http://www.googleplus.com" target="_blank">
+                  <img class="rounded socialStyle" src="ico/Googleplus-200x200.png" alt="GooglePlus">
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-    <!-- menu general -->
-        <div class="row" >
-          <div class="col-lg-12 navStyle">
-
-            <nav class="navbar navStyle">
-              <div class="content navbar-expand-sm">
-                <ul class="navbar-nav nav-fill justify-content-center">
-                  <li class="nav-item active"><a class="nav-link navStyle" href="#">Inicio</a></li>
-                  <li class="nav-item"><a class="nav-link navStyle" href="#">Grupos</a></li>
-                  <li class="nav-item"><a class="nav-link navStyle" href="#">Artistas</a></li>
-                  <li class="nav-item"><a class="nav-link navStyle" href="#">Top 10</a></li>
-                  <li class="nav-item"><a class="nav-link navStyle" href="#">Letras</a></li>
-                  <li class="nav-item"><a class="nav-link navStyle" href="#">Acordes</a></li>
-                </ul>
-              </div>
-            </nav>
-
-          </div>
+        <!-- menu general -->
+        <div class="row align-items-center" >
+          <div class="col-md-2 navStyle"><a class="navStyle" href="#">Inicio</a></div>
+          <div class="col-md-2 navStyle"><a class="navStyle" href="#">Grupos</a></div>
+          <div class="col-md-2 navStyle"><a class="navStyle" href="#">Artistas</a></div>
+          <div class="col-md-2 navStyle"><a class="navStyle" href="#">Top 10</a></div>
+          <div class="col-md-2 navStyle"><a class="navStyle" href="#">Letras</a></div>
+          <div class="col-md-2 navStyle"><a class="navStyle" href="#">Acordes</a></div>
         </div>
-
       </div>
-      <div class="col-lg-2 pagStyle"></div>
+      <div class="col-md-2 fondoColor"></div>
     </div>
 
-    <div class="row" > <!-- Cuerpo general. Se dejan los margenes necesarios. -->
-      <div class="col-lg-2"  style="background-color: #800000"></div>
-        <div class="col-lg-8" style="background-color: #800000">
-          <div class="row">
-            <div class="col-lg-7" style="background-color: #e6e6e6" >Articulos</div>
-            <div class="col-lg-5" style="background-color: #e6e6e6" >Busqueda</div>
+    <div class="row" > <!-- cuerpo del blog. -->
+      <div class="col-md-2 fondoColor"></div>
+      <div class="col-md-8">
+
+
+        <div class="row">
+          <div class="col-md-7 headerStyle">
+            <div class="row">
+             <!-- Articulos. -->
+             <div class="col-md-8 notasStyle" style="background-color: inherit"  >
+
+                   <h1>Queen</h1>
+                   <p>Agrupacion inglesa que marco toda una era en la musica Rock instrumental. Cada uno de sus Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum..</p>
+                 </div>
+                 <div class="col-md-4">
+                   <div class="container headerStyle" >
+                     <img src="medios/Queen.jpg" alt="musica" class="rounded float-center" width="100%">
+                   </div>
+                </div>
+              </div>
+              <div class="row" >
+                <div class="col-md-3"></div>
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <label for="Comentario">Comentario</label>
+                    <textarea name="Comentario" rows="2" class="form-control"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 cuerpoColor" >Busqueda</div>
           </div>
+
         </div>
-      <div class="col-lg-2" style="background-color:#800000"></div>
+      <div class="col-md-2 fondoColor"></div>
     </div>
 
   </body>
