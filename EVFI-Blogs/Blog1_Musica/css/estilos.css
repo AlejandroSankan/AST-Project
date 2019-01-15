@@ -1,13 +1,13 @@
 * {
     box-sizing: border-box;
 		background-color: #800000;
-		text-align: center;
+    text-align: center;
 		color: black;
 		font-size: 12px;
-    border: 0px solid inherit;
+    border: 0px solid green
 }
 
-.col-1 {width: 8.33%;}
+/*.col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
@@ -19,15 +19,18 @@
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-
+*/
 [class*="col-"] {
     float: center;
     padding: 0px;
 }
 
 .imgStyle {
-  margin-left: 20px;
+  margin-left: 10%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
+
 .fondoColor {
   background-color:  #800000;
 }
@@ -46,6 +49,21 @@
   width: 30px;
 }
 
+.artStyle {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2%;
+  padding-bottom: 2%
+}
+
+.fotoStyle {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%
+}
+
+
 .ajusteNav {
   justify-content: center;
 }
@@ -58,11 +76,31 @@
 
 /* ================================================================================== DEFINICIONES PANTALLA 900PX ===============================================================*/
 
-@media screen and (min-width: 900px){
-	/* Definiciones generales ----*/
+@media screen and (min-width: 480px){
 
+	/* Definiciones generales ----*/
   .ajusteNav {
     margin-right: 10px;
     justify-content: flex-end;
     box-sizing: content-box;
+  }
+
+  .imgStyle {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .artStyle {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%
+  }
+
+  .fotoStyle {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 2%;
+    padding-bottom: 2%;
   }
