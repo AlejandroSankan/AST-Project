@@ -75,6 +75,10 @@
   color:#800000;
 }
 
+.btnStyle {
+  background-color:inherit;
+  color:#800000;
+}
 
 .sizeIco {
   width: 25px;
@@ -88,6 +92,10 @@
   text-align: left;
 }
 
+.opcAlign {
+  text-align: left;
+  margin-left: 30px;
+}
 
 /* ================================================================================== DEFINICIONES PANTALLA 900PX ===============================================================*/
 
@@ -127,4 +135,9 @@
     margin-right: 0px;
     padding: 0px 4px 0px 0px;
     text-align: left;
+  }
+
+  .opcAlign {
+    text-align: left;
+    margin-left: 0px;
   }
