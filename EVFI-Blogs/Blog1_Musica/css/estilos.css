@@ -1,13 +1,14 @@
 * {
     box-sizing: border-box;
-		background-color: #800000;
+    font-family: sans-serif;
+	  background-color: #800000;
     text-align: center;
 		color: black;
 		font-size: 12px;
-    border: 0px solid green
+    margin-left: 0;
 }
 
-/*.col-1 {width: 8.33%;}
+.col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
 .col-4 {width: 33.33%;}
@@ -19,7 +20,8 @@
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
-*/
+
+
 [class*="col-"] {
     float: center;
     padding: 0px;
@@ -74,33 +76,55 @@
 }
 
 
+.sizeIco {
+  width: 25px;
+  margin-left: 50%;
+}
+
+.commentStyle {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding: 0px 35px 0px 0px;
+  text-align: left;
+}
+
+
 /* ================================================================================== DEFINICIONES PANTALLA 900PX ===============================================================*/
 
-@media screen and (min-width: 480px){
+@media screen and (min-width: 768px){
 
 	/* Definiciones generales ----*/
   .ajusteNav {
     margin-right: 10px;
     justify-content: flex-end;
-    box-sizing: content-box;
   }
 
   .imgStyle {
-    margin-left: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
     margin-top: 5px;
     margin-bottom: 5px;
   }
 
   .artStyle {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 2%;
-    padding-bottom: 2%
+    padding: 5px 15px 5px 15px;
   }
 
   .fotoStyle {
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 2px;
+  }
+
+  .sizeIco {
+    width: 35px;
+    margin-left: 15px;
+  }
+
+  .commentStyle {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px 4px 0px 0px;
+    text-align: left;
   }
