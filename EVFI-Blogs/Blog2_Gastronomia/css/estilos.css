@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+		font-size: 12px;
+    margin-left: 0;
+}
+
+.lineaBlanca {
+border-bottom: 1px solid white;
+}
+
+.lineaRosa {
+border-bottom: 1px solid #ff00ff;
+}
+
+
+.pageColor{
+  opacity: .6;
+  background-color: #336699;
+  color: white;
+  text-align: left;
+  padding-top: 1px;
+}
+
+.seccionColor{
+  opacity: .6;
+  background-color: #ffccff;
+  color: black;
+  text-align: left;
+  margin: 4px;
+}
+
+/*
+.opacidad {
+  opacity: .5;
+  background-color: rgb(0, 0, 0);
+  height: 2em;
+  width: 150px;
+  position: absolute;
+  top: 10px;
+  color: #fff;
+  text-align: center;
+  padding-top: 1em;
+}
+*/
