@@ -14,11 +14,6 @@
   max-height: 129px;
 }
 
-.lineaRosa {
-border-bottom: 1px solid #ff00ff;
-}
-
-
 .pageColor{
   opacity: .8;
   background-color: #336699;
@@ -37,7 +32,7 @@ border-bottom: 1px solid #ff00ff;
 
 .buscarBoton{
   background-color: #ff66ff;
-  color: white#ff66ff;
+  color: white;
   padding: 4px;
   border-color: #ff66ff;
 }
@@ -49,12 +44,34 @@ border-bottom: 1px solid #ff00ff;
   border-color: #ff66ff;
 }
 
+.menuColor{
+  background-color: #e6e6ff;
+  color: #ff66ff;
+}
+
 #menuFavoritos {
   display: none;
 }
 
-@media screen and (min-width: 768px){
+#menuHistorial {
+  display: none;
+}
+
+.sizeIco {
+  width: 25px;
+}
+
+@media screen and (min-width: 640px){
   #menuFavoritos {
     display: block;
   }
+  #menuHistorial {
+    display: block;
+  }
+
+  .sizeIco {
+    width: 40px;
+  }
+
+
 }
