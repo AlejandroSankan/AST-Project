@@ -1,0 +1,15 @@
+* {
+  border: 0px solid white;
+}
+.color1 {
+  background-color: #4db6ac;
+}
+
+.color2 {
+  background-color: #00796b;
+}
+
+@media screen and (min-width: 900px){
+
+
+}
