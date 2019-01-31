@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
 
-    <meta name="author" content="Alejandro Sankán Tapia">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1.0">
-    <meta name="description" content="Uso de framework Materialize">
+    <meta name="author" content="Alejandro Sankán Tapia"/>
+    <meta name="description" content="Uso de framework Materialize"/>
     <title>Blog de Viajes</title>
-    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen, projection">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="css/estilo_personalizado.css" type="text/css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen, projection"/>
+    <link href="css/estilo_personalizado.css" type="text/css" rel="stylesheet"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1.0"/>
 
   </head>
   <body>
-    <script type="text/javascript" scr="https://code.jquery.com/jquery-2.1.1.min.js"> </script>
-    <script type="text/javascript" scr="js/materialize.min.js"> </script>
 
     <div class="grid-block" style="background-image: url('medios/turismo-sustentable.png'); height: 100vh; background-position: center bottom; background-attachment: fixed; background-size: cover; overflow: scroll">
 
+    <div class="container-flex">
+
       <!-- inicio encabezado -->
 
-      <div class="row col s12 heightNavbar">
+      <div class="row col s12 heightNavbar color1">
         <!-- Logo, navbar y lema -->
         <div class="row ">
           <div class="col s3 m2 l2">
@@ -35,16 +38,21 @@
                 <nav class="z-depth-0 color1">
                   <div class="nav-wrapper">
                     <ul class="right color1 hide-on-small-and-down">
-                      <li><a class="btn-small color2"><i class="material-icons left">home</i>Inicio</a></li>
-                      <li><a class="btn-small color2"><i class="material-icons left">location_on</i>Estuve en..</a></li>
-                      <li><a class="btn-small color2"><i class="material-icons left">grade</i>Mejores viajes</a></li>
-                      <li><a class="btn-small color2"><i class="material-icons left">announcement</i>Recomiendos</a></li>
+                      <li class="right color1 hide-on-small-and-down">
+                        <a class="btn-small color2"><i class="material-icons left">home</i>Inicio</a>
+                        <a class="btn-small color2"><i class="material-icons left">location_on</i>Estuve en..</a>
+                        <a class="btn-small color2"><i class="material-icons left">grade</i>Mejores viajes</a>
+                        <a class="btn-small color2"><i class="material-icons left">announcement</i>Recomiendos</a>
+                      </li>
                     </ul>
+
                     <ul class="right hide-on-med-and-up ">
-                      <li><a class="btn-small color2"><i class="material-icons left">home</i></a></li>
-                      <li><a class="btn-small color2"><i class="material-icons left">location_on</i></a></li>
-                      <li><a class="btn-small color2"><i class="material-icons left">grade</i></a></li>
-                      <li><a class="btn-small color2"><i class="material-icons left">announcement</i></a></li>
+                      <li>
+                        <a class="btn-small color2"><i class="material-icons left">home</i></a>
+                        <a class="btn-small color2"><i class="material-icons left">location_on</i></a>
+                        <a class="btn-small color2"><i class="material-icons left">grade</i></a>
+                        <a class="btn-small color2"><i class="material-icons left">announcement</i></a>
+                      </li>
                     </ul>
                   </div>
                 </nav>
@@ -61,11 +69,32 @@
       </div>
       <!-- Fin del encabezado -->
 
+      <!-- Galeria de viajes -->
       <div class="row" style="padding: 0px">
-        <div class="col s12 m1 center">
-          <!-- borde menu -->
-        </div>
+        <div class="col s12 m1 left">
+          <!-- botonera de redes sociales -->
+          <ul class="left hide-on-small-and-down ">
+            <li> <a href="http://www.facebook.com" target="_blank">
+              <img class="btnSocial" src="ico/facebook.png" alt="facebook"></a>
+            </li>
+            <li> <a href="http://www.twitter.com" target="_blank">
+              <img class="btnSocial" src="ico/twitter.png" alt="twitter"></a>
+            </li>
+            <li> <a href="http://www.pinterest.com" target="_blank">
+              <img class="btnSocial" src="ico/pinterest.png" alt="pinterest"></a>
+            </li>
+            <li> <a href="http://www.youtube.com" target="_blank">
+              <img class="btnSocial" src="ico/youtube.png" alt="youtube"></a>
+            </li>
+            <li> <a href="http://www.instagram.com" target="_blank">
+              <img class="btnSocial" src="ico/instagram.png" alt="instagram"></a>
+            </li>
+            <li> <a href="http://plus.google.com/discover" target="_blank">
+              <img class="btnSocial" src="ico/google-plus.png" alt="google-plus"></a>
+            </li>
 
+          </ul>
+        </div>
         <div class="col s12 m4 center">
           <div class="row col s12 m12">
             <img class="z-depth-3 imgStyle2" src="medios/paisaje1.jpg" >
@@ -83,10 +112,10 @@
 
         <div class="col s12 m3 center">
           <div class="row col s12 m12">
-            <img class="z-depth-3 imgStyle2" src="medios/paisaje3.jpg" >
+            <img class="z-depth-3 imgStyle2" src="medios/dubai.jpg" >
           </div>
           <div class="row col s12 m12">
-            <img class="z-depth-3 imgStyle2" src="medios/dubai.jpg" >
+            <img class="z-depth-3 imgStyle2" src="medios/paisaje3.jpg" >
           </div>
           <div class="row col s12 m12">
             <img class="z-depth-3 imgStyle2" src="medios/tikal.jpg" >
@@ -94,7 +123,120 @@
         </div>
       </div>
 
+      <!-- Entrada de Blog1 y Perfil del autor -->
+      <div class="row" style="padding: 0px">
+        <div class="col s12 m9">
+          <!-- Entrada de Blog -->
+          <div class="card horizontal">
+            <div style="margin: 10px">
+             <img src="medios/new-york.jpg" width="200px" height="200px" hspace="5" vspace="5" style="float:left; border:1px solid #00796b" />
+              <h4 class="header">New York</h4>
+              <div class="chip">31 enero 2019<i class="tiny material-icons rigth">today</i></div>
+              <div class="chip">Santa Cruz de la Sierra<i class="tiny material-icons rigth">location_on</i></div><br>
+              <span class="black-text" style="margin: 15px">
+                Nueva York (en inglés: New York) es la ciudad más poblada de los Estados Unidos de América, una de las mayores del continente americano y del mundo.<br>
+                Desde finales del siglo XIX es uno de los centros de la economía mundial. Nueva York está considerada como una ciudad global, por sus influencias a nivel mundial en los medios de comunicación, en la política, en la educación, en la arquitectura,en el entretenimiento, las artes y la moda.​ La influencia artística y cultural de la ciudad es de las más fuertes del mundo. La enorme relevancia de la ciudad a todos los niveles la convierte, juntamente con Londres, Tokio y París, en una de las ciudades más destacadas e influyentes del planeta.<br>
+                La ciudad tiene muchos lugares y edificios reconocidos por todo el mundo. Por ejemplo, la estatua de la Libertad, ubicada en la isla homónima, y la isla de Ellis, que recibió a millones de inmigrantes que llegaban a Estados Unidos a finales del siglo XIX y comienzos del XX. Wall Street ha sido uno de los principales centros mundiales de finanzas desde la Segunda Guerra Mundial y es la sede de la Bolsa de Nueva York. La ciudad también ha concentrado a muchos de los edificios más altos del mundo, entre los que se encuentran el edificio Empire State, el One World Trade Center, el edificio Chrysler, el 432 Park Avenue, la Trump Tower, el edificio Seagram, y las torres gemelas del World Trade Center, que fueron derribadas en los atentados del 11 de septiembre de 2001.<br>
+                La ciudad también es la cuna de muchos movimientos culturales estadounidenses, como por ejemplo el renacimiento de Harlem en literatura y artes visuales, el expresionismo abstracto (también conocido como Escuela de Nueva York) en pintura, y hip hop, break dance,10​ punk y Tin Pan Alley en música. En 2005, se hablaban casi 170 idiomas en la ciudad, y el 36 % de su población había nacido fuera de los Estados Unidos.
+              </span>
+            </div>
+          </div>
+
+          <div class="row">
+            <form class="col s12 m12">
+              <div class="row color3"  style="margin: 0px">
+                <div class="input-field">
+                  <i class="material-icons prefix">person</i>
+                  <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                  <label for="icon_prefix2">Comentario</label>
+                  <button class="btn-small waves-effect waves-light right" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                  </button>
+
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="col s12 m3 center">
+        <!-- Perfil del autor -->
+          <div class="card-panel grey lighten-5 z-depth-1">
+            <div class="row">
+              <div class="col s12 m12">
+                <img src="medios/autor.jpg" alt="" class="circle responsive-img" width="40%"> <!-- notice the "circle" class -->
+              </div>
+              <h5>Perfil del Autor</h5>
+              <div class="col s12 m12">
+                <span class="black-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
 
+
+    <!-- Entrada de Blog 2 y Perfil del autor -->
+    <div class="row" style="padding: 0px">
+      <div class="col s12 m9">
+        <!-- Segundo articulo del blog -->
+        <div class="card horizontal">
+          <div style="margin: 10px">
+           <img src="medios/tikal.jpg" width="200px" height="200px" hspace="5" vspace="5" style="float:left; border:1px solid #00796b" />
+            <h4 class="header">Tikal</h4>
+            <div class="chip">27 enero 2019<i class="tiny material-icons rigth">today</i></div>
+            <div class="chip">Santa Cruz de la Sierra<i class="tiny material-icons rigth">location_on</i></div><br>
+            <span class="black-text" style="margin: 15px">
+              Tikal (o Tik'al, de acuerdo con la ortografía maya moderna) es uno de los mayores yacimientos arqueológicos y centros urbanos de la civilización maya precolombina. Está situado en el municipio de Flores, en el departamento de Petén, en el territorio actual de la República de Guatemala y forma parte del Parque nacional Tikal, que fue declarado Patrimonio de la Humanidad, por Unesco, en 1979.​ Según los glifos encontrados en el yacimiento, su nombre maya habría sido Yax Mutul.<br>
+              Tikal fue la capital de un estado beligerante, que se convirtió en uno de los reinos más poderosos de los antiguos mayas.​ Aunque la arquitectura monumental del sitio se remonta hasta el siglo iv a. C., Tikal alcanzó su apogeo durante el Período Clásico, entre el 200 y el 900 d. C. Durante este tiempo, la ciudad dominó gran parte de la región maya, en el ámbito político, económico y militar y mantenía vínculos con otras regiones, a lo largo de Mesoamérica, incluso con la gran metrópoli de Teotihuacan, en el lejano Valle de México.<br>
+              Después del Clásico Tardío, no se construyeron monumentos mayores.<br>
+              Con una larga lista de gobernantes dinásticos, el descubrimiento de muchas de sus respectivas tumbas y el estudio de sus monumentos, templos y palacios, Tikal es probablemente la mejor comprendida de las grandes ciudades mayas de las tierras bajas de Mesoamérica.​
+            </span>
+          </div>
+        </div>
+
+        <div class="row">
+          <form class="col s12 m12">
+            <div class="row color3"  style="margin: 0px">
+              <div class="input-field">
+                <i class="material-icons prefix">person</i>
+                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                <label for="icon_prefix2">Comentario</label>
+                <button class="btn-small waves-effect waves-light right" type="submit" name="action">Submit
+                  <i class="material-icons right">send</i>
+                </button>
+
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="col s12 m3 center">
+      <!-- Perfil del autor -->
+        <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="row">
+            <div class="col s12 m12">
+              <img src="medios/autor.jpg" alt="" class="circle responsive-img" width="40%"> <!-- notice the "circle" class -->
+            </div>
+            <h5>Perfil del Autor</h5>
+            <div class="col s12 m12">
+              <span class="black-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
   </body>
 </html>
