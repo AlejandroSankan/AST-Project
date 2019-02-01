@@ -17,179 +17,183 @@
     <!-- fondo de pantalla fijo -->
   <div class="grid-block" style="background-image: url('medios/Cocina.jpg'); height: 100vh; background-position: center center; background-attachment: fixed; background-size: cover; overflow: scroll">
 
-    <div class="row small-stack medium-unstack collapse align-left pageColor">
-      <!-- Columna de menu -->
-      <div class="small-12 medium-4 columns">
+    <div class="container">
 
-        <div class="container" style="padding-right:5px">
-          <h1>Mi Recetario</h1>
-          <h4 class="text-right">Cocina para disfrutar </h4>
-        </div>
-      </div>
-      <div class="small-12 medium-7 columns  hide-for-small-only show-for-landscape" style="border-left: 1px solid white";></div>
-    </div>
+      <div class="row small-stack medium-unstack collapse align-left pageColor">
+        <!-- Columna de menu -->
+        <div class="small-12 medium-4 columns">
 
-    <!-- division header del cuerpo de la pagina -->
-    <div class="row small-stack medium-unstack collapse align-spaced pageColor" style="border-top: 1px solid white">
-    </div>
-
-
-    <!-- Cuerpo de la pagina -->
-    <div class="row small-stack medium-unstack collapse align-center">
-
-      <div class="small-12 medium-4 columns seccionColor" style="padding: 15px">
-          <!-- Busqueda -->
-        <div class="input-group">
-          <input class="input-group-field" type="text" placeholder="Buscar">
-          <div class="input-group-button">
-            <input type="submit" class="button buscarBoton" value="Buscar">
+          <div class="container" style="padding-right:5px">
+            <h1>Mi Recetario</h1>
+            <h4 class="text-right">Cocina para disfrutar </h4>
           </div>
         </div>
+        <div class="small-12 medium-9 columns hide-for-small-only" style="border-left: 1px solid white";>
+        </div>
+      </div>
+
+      <!-- division header del cuerpo de la pagina -->
+      <div class="row small-stack medium-unstack collapse align-spaced pageColor" style="border-top: 1px solid white">
+      </div>
+
+      <!-- Cuerpo de la pagina -->
+      <div class="row small-stack medium-unstack collapse align-center">
+
+        <div class="small-12 medium-4 columns seccionColor" style="padding: 15px">
+          <!-- Busqueda -->
+          <div class="input-group">
+            <input class="input-group-field" type="text" placeholder="Buscar"/>
+            <div class="input-group-button">
+              <input type="submit" class="button buscarBoton" value="Buscar"/>
+            </div>
+          </div>
 
           <!-- menu vertical -->
-        <div class="container">
-          <ul class="vertical menu">
-            <li><a href="#" class="button botonColor">Inicio</a></li>
-            <li><a href="#" class="button botonColor">Mi plato perfecto</a></li>
-            <li><a href="#" class="button botonColor">Mis recetas</a></li>
-          </ul>
-        </div>
-
-        <!-- Favoritos -->
-        <div class="container" id="menuFavoritos">
-          <h6 class="menuColor" style="padding-top: 20px">Favoritos:</h6>
-          <div class="row small-uncollapse hide-for-small-only show-for-landscape large-uncollapse">
-            <div class="large-4 small-12 medium-4 columns">
-              <img src="medios/1.jpg" alt="Favorito 1" class="thumbnail imgFav"/>
-            </div>
-            <div class="large-4 small-12 medium-4 columns">
-              <img src="medios/2.jpg" alt="Favorito 1" class="thumbnail"/>
-            </div>
-            <div class="large-4 small-12 medium-4 columns">
-              <img src="medios/3.jpg" alt="Favorito 1" class="thumbnail"/>
-            </div>
-          </div>
-
-          <div class="row hide-for-small-only show-for-landscape large-uncollapse">
-            <div class="large-4 small-12 medium-4 columns">
-              <img src="medios/4.jpg" alt="Favorito 1" class="thumbnail"/>
-            </div>
-            <div class="large-4 small-12 medium-4 columns">
-              <img src="medios/5.jpg" alt="Favorito 1" class="thumbnail"/>
-            </div>
-            <div class="large-4 small-12 medium-4 columns">
-              <img src="medios/6.jpg" alt="Favorito 1" class="thumbnail"/>
-            </div>
-          </div>
-
-        </div>
-        <!-- historial -->
-        <div class="container" id="menuHistorial">
-          <h6 class="menuColor">Historial:</h6>
-          <ul class="vertical menu">
-            <li><a class="menuColor" href="#">Ravioles de carne</a></li>
-            <li><a class="menuColor" href="#">Sushi Tempura</a></li>
-            <li><a class="menuColor" href="#">Helado de canela</a></li>
-            <li><a class="menuColor" href="#">Pizza Hawaiana</a></li>
-          </ul>
-        </div>
-
-
-      </div>
-
-
-      <!-- Columna de articulos -->
-      <div class="small-12 medium-8 columns pageColor" style="padding: 0px">
-        <!-- Articulo 1 -->
-        <div class="row column seccionColor" style="padding: 20px">
           <div class="container">
-            <h3 class="text-left">Tallarines con Salsa Alfredo</h3>
-            <h6 class="text-left">miércoles 01 de enero de 2019</h6>
-          </div>
-          <div class="small-12 medium-12 columns">
-            <img src="medios/fideos_salsa_alfredo.jpg" alt="Recetario 1" class="thumbnail"/>
-          </div>
-          <div class="container text-justify">
-            <p><strong>SALSA ALFREDO</strong> es una salsa cremosa que combina queso Parmesano, mantequilla y pimienta blanca. Lleva el nombre de su creador <strong>Alfredo Di Lelio</strong> que elaboró la salsa en 1908.<br>
-            La salsa es muy popular en Italia donde se combina sobre todo con Fettuccine, (que son parecidos a los tallarines pero algo más gruesos). El cocinero Alfredo Di Lelio primero la llamó <em>‘fettuccine al triple burro’</em> pero luego pasó a llamarse como él. Trabajaba en el restaurante de su madre Angelina situado en la plaza Rosa en Roma. Esta plaza hoy no existe ya que desapareció cuando en su lugar edificaron la Gallería Colonna.<br>
-            Alfredo se independizó de su madre y abrió su propio restaurante en 1914 en la Vía Scrofa muy céntrico. Sus plato estrella ‘los fettuccine Alfredo’ tuvieron tanto éxito que cuando alguien viajaba a Roma si tenía ocasión iban a su restaurante.  Alfredo Di Leilo se convirtió en famoso no solo dentro de Italia sino en otros países del mundo como Los Estados Unidos.
-          </p>
-            <p><strong>INGREDIENTES:</strong> ½ kilo de tallarines, 500 gramos de jamón en cuadraditos,1 lata de leche evaporada pura,½ taza de queso parmesano rallado,100 gramos de margarina,Sal,Perejil para decorar.</p>
-            <p><strong>MODO DE PREPARACIÓN:</strong> Cocina los tallarines como los sueles preparar. Luego en una olla aparte debes derretir la mantequilla con la leche, agregar el queso parmesano rallado y dejar a fuego lento por algunos minutos (revolver al mismo tiempo).<br>
-            Después condimenta esta mezcla con sal al gusto y añade el jamón cortado en cuadrados. Posteriormente añade la salsa sobre los tallarines y finaliza decorando con perejil (opcional).
-            </p>
+            <ul class="vertical menu">
+              <li><a href="#" class="button botonColor">Inicio</a></li>
+              <li><a href="#" class="button botonColor">Mi plato perfecto</a></li>
+              <li><a href="#" class="button botonColor">Mis recetas</a></li>
+            </ul>
           </div>
 
-          <div class="row small-10 center" style="border-top: 1px solid #336699">
+          <!-- Favoritos -->
+          <div class="container" id="menuFavoritos">
+            <h6 class="menuColor" style="padding-top: 20px">Favoritos:</h6>
+            <div class="row small-uncollapse hide-for-small-only show-for-landscape large-uncollapse">
+              <div class="large-4 small-12 medium-4 columns">
+                <img src="medios/1.jpg" alt="Favorito 1" class="thumbnail imgFav"/>
+              </div>
+              <div class="large-4 small-12 medium-4 columns">
+                <img src="medios/2.jpg" alt="Favorito 1" class="thumbnail"/>
+              </div>
+              <div class="large-4 small-12 medium-4 columns">
+                <img src="medios/3.jpg" alt="Favorito 1" class="thumbnail"/>
+              </div>
+            </div>
+
+            <div class="row hide-for-small-only show-for-landscape large-uncollapse">
+              <div class="large-4 small-12 medium-4 columns">
+                <img src="medios/4.jpg" alt="Favorito 1" class="thumbnail"/>
+              </div>
+              <div class="large-4 small-12 medium-4 columns">
+                <img src="medios/5.jpg" alt="Favorito 1" class="thumbnail"/>
+              </div>
+              <div class="large-4 small-12 medium-4 columns">
+                <img src="medios/6.jpg" alt="Favorito 1" class="thumbnail"/>
+              </div>
+            </div>
+
+          </div>
+          <!-- historial -->
+          <div class="container" id="menuHistorial">
+            <h6 class="menuColor">Historial:</h6>
+            <ul class="vertical menu">
+              <li><a class="menuColor" href="#">Ravioles de carne</a></li>
+              <li><a class="menuColor" href="#">Sushi Tempura</a></li>
+              <li><a class="menuColor" href="#">Helado de canela</a></li>
+              <li><a class="menuColor" href="#">Pizza Hawaiana</a></li>
+            </ul>
           </div>
 
-          <!-- Comentario 1. -->
-          <div class="row" style="padding:  20px 20px 0px 20px">
-            <div class="small-1 cell center">
-              <img src="ico/usr.png" class="rounded sizeIco">
-            </div>
-            <div class="small-11 cell">
-              <input type="text" placeholder="Ingresa tu comentario...">
-            </div>
-          </div>
-          <div class="row align-right" style="padding:  0px 20px 0px 20px">
-            <input type="submit" name="comment2" class="button buscarBoton" value="Publicar">
-          </div>
 
         </div>
 
 
-        <!-- Articulo 2 -->
+        <!-- Columna de articulos -->
+        <div class="small-12 medium-8 columns pageColor" style="padding: 0px">
+          <!-- Articulo 1 -->
+          <div class="row column seccionColor" style="padding: 20px">
+            <div class="container">
+              <h3 class="text-left">Tallarines con Salsa Alfredo</h3>
+              <h6 class="text-left">miércoles 01 de enero de 2019</h6>
+            </div>
+            <div class="small-12 medium-12 columns">
+              <img src="medios/fideos_salsa_alfredo.jpg" alt="Recetario 1" class="thumbnail"/>
+            </div>
+            <div class="container text-justify">
+              <p><strong>SALSA ALFREDO</strong> es una salsa cremosa que combina queso Parmesano, mantequilla y pimienta blanca.   Lleva el nombre de su creador <strong>Alfredo Di Lelio</strong> que elaboró la salsa en 1908.<br>
+              La salsa es muy popular en Italia donde se combina sobre todo con Fettuccine, (que son parecidos a los tallarines pero algo más gruesos). El cocinero Alfredo Di Lelio primero la llamó <em>‘fettuccine al triple burro’</em> pero luego pasó a llamarse como él. Trabajaba en el restaurante de su madre Angelina situado en la plaza Rosa en Roma. Esta plaza hoy no existe ya que desapareció cuando en su lugar edificaron la Gallería Colonna.<br>
+              Alfredo se independizó de su madre y abrió su propio restaurante en 1914 en la Vía Scrofa muy céntrico. Sus plato estrella ‘los fettuccine Alfredo’ tuvieron tanto éxito que cuando alguien viajaba a Roma si tenía ocasión iban a su restaurante.  Alfredo Di Leilo se convirtió en famoso no solo dentro de Italia sino en otros países del mundo como Los Estados Unidos.
+              </p>
+              <p><strong>INGREDIENTES:</strong> ½ kilo de tallarines, 500 gramos de jamón en cuadraditos,1 lata de leche evaporada pura,½ taza de queso parmesano rallado,100 gramos de margarina,Sal,Perejil para decorar.</p>
+              <p><strong>MODO DE PREPARACIÓN:</strong> Cocina los tallarines como los sueles preparar. Luego en una olla aparte debes derretir la mantequilla con la leche, agregar el queso parmesano rallado y dejar a fuego lento por algunos minutos (revolver al mismo tiempo).<br>
+              Después condimenta esta mezcla con sal al gusto y añade el jamón cortado en cuadrados. Posteriormente añade la salsa sobre los tallarines y finaliza decorando con perejil (opcional).
+              </p>
+            </div>
 
-        <div class="row column seccionColor" style="padding: 20px">
-          <div class="container">
-            <h4 class="text-left">Caramel Milkshaque</h4>
-            <h6 class="text-left">jueves 24 de enero de 2019</h6>
+            <div class="row small-10 center" style="border-top: 1px solid #336699">
+            </div>
+
+            <!-- Comentario 1. -->
+            <div class="row" style="padding:  20px 20px 0px 20px">
+              <div class="small-1 cell center">
+                <img src="ico/usr.png" class="rounded sizeIco">
+              </div>
+              <div class="small-11 cell">
+                <input type="text" placeholder="Ingresa tu comentario...">
+              </div>
+            </div>
+            <div class="row align-right" style="padding:  0px 20px 0px 20px">
+              <input type="submit" name="comment2" class="button buscarBoton" value="Publicar">
+            </div>
 
           </div>
-          <div class="small-12 medium-12 columns">
-            <img src="medios/Caramel-Milkshake.jpg" alt="Recetario 2" class="thumbnail"/>
-          </div>
-          <div class="container text-justify">
-            <p><strong>Consejos sobre como hacer el mejor batido</strong><br>
+
+
+          <!-- Articulo 2 -->
+
+          <div class="row column seccionColor" style="padding: 20px">
+            <div class="container">
+              <h4 class="text-left">Caramel Milkshaque</h4>
+              <h6 class="text-left">jueves 24 de enero de 2019</h6>
+            </div>
+            <div class="small-12 medium-12 columns">
+              <img src="medios/Caramel-Milkshake.jpg" alt="Recetario 2" class="thumbnail"/>
+            </div>
+            <div class="container text-justify">
+              <p><strong>Consejos sobre como hacer el mejor batido</strong><br>
               Hacer un batido de leche es súper simple: simplemente mezcle los ingredientes en una licuadora y mezcle. Pero hay algunas cosas clave que debe recordar si desea hacer el mejor batido casero de su vida.<br>
               <strong>Use leche entera o deslactosada:</strong> Si va a hacer un batido de caramelo hecho en casa, tiene que esforzarse al máximo. Use leche entera (o deslactosada) para el batido más espeso y cremoso posible. Y si la leche entera es demasiado para ti, al menos ve al 2%.<br>
               <strong>Compre verdadero helado:</strong> Lo siento, pero el helado bajo en grasa que venden en el supermercado no es un verdadero helado. Lea la etiqueta de ingredientes en su pinta de helado para asegurarse de que está obteniendo lo bueno. La leche, la crema y el azúcar deben ser los ingredientes principales, y tampoco querrás ningún espesante ni estabilizador.<br>
               <strong>Rocíe la salsa de caramelo dentro del vaso:</strong> Este paso es totalmente opcional, pero realmente sorprenderá a quien quiera que esté haciendo un batido. Rocíe un poco de salsa de caramelo por los lados del vaso y luego vierta el batido de caramelo. El caramelo a lo largo de los lados hará que su batido casero tenga un aspecto totalmente profesional.<br>
               <strong>Agregue una pizca de sal, si lo desea:</strong> Si realmente quiere hacerlo, incluso puede mezclar sal en su caramelo para obtener un batido de caramelo salado. Alrededor de 1/4 cucharadita haría. Porque lo único que me gusta más que el caramelo ... es el caramelo salado.
-            </p>
-            <p><strong>INGREDIENTES:</strong><br>
+              </p>
+              <p><strong>INGREDIENTES:</strong><br>
               <strong>Para el batido:</strong> 1 pinta de helado de vainilla, 3/4 taza de leche entera, 3 cucharadas de Tate + Lyle® Caramel Pure Cane Syrup. <br>
               <strong>Coberturas opcionales:</strong> Caramelo, crema batida, rociado de arcoiris.<br><br>
               <strong>PREPARACION:</strong> Rocíe el caramelo dentro de los tarros de albañil. Dejar de lado. En una licuadora grande, mezcle el helado de vainilla, la leche entera y el jarabe de canela puro Tate + Lyle® hasta que quede suave. Vierta en frascos de albañil, luego cubra con más caramelo, crema batida y gotas de arco iris.
-            </p>
-          </div>
-
-          <div class="row small-10 center" style="border-top: 1px solid #336699">
-          </div>
-
-          <!-- Comentario 2. -->
-          <div class="row" style="padding:  20px 20px 0px 20px">
-            <div class="small-1 cell center">
-              <img src="ico/usr.png" class="rounded sizeIco">
+              </p>
             </div>
-            <div class="small-11 cell">
-              <input type="text" name="comment2" placeholder="Ingresa tu comentario...">
+
+            <div class="row small-10 center" style="border-top: 1px solid #336699">
             </div>
-          </div>
-          <div class="row align-right" style="padding: 0px 20px 0px 20px">
-            <input type="submit" class="button buscarBoton" value="Publicar">
+
+            <!-- Comentario 2. -->
+            <div class="row" style="padding:  20px 20px 0px 20px">
+              <div class="small-1 cell center">
+                <img src="ico/usr.png" class="rounded sizeIco">
+              </div>
+              <div class="small-11 cell">
+                <input type="text" name="comment2" placeholder="Ingresa tu comentario...">
+              </div>
+            </div>
+            <div class="row align-right" style="padding: 0px 20px 0px 20px">
+              <input type="submit" class="button buscarBoton" value="Publicar">
+            </div>
+
           </div>
 
         </div>
-
       </div>
     </div>
+
   </div>
 
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/vendor/what-input.js"></script>
-    <script src="js/vendor/foundation.js"></script>
-    <script src="js/app.js"></script>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+
   </body>
 </html>
