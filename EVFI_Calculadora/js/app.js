@@ -31,51 +31,52 @@ function ingresaDigito( tecla ) {
 }
 
 function pres1( ){
-  document.getElementById('1').style = "padding:5px; background-color: #999999";
+  document.getElementById('1').style = "padding:3px; background-color: #999999";
   ingresaDigito(1);
 }
 function pres2 ( ){
-  document.getElementById( '2' ).style = "padding:5px; background-color: #999999";
+  document.getElementById( '2' ).style = "padding:3px; background-color: #999999";
   ingresaDigito(2);
 }
 function pres3 ( ){
-  document.getElementById('3').style = "padding:5px; background-color: #999999";
+  document.getElementById('3').style = "padding:3px; background-color: #999999";
   ingresaDigito(3);
 }
 function pres4 ( ){
-  document.getElementById('4').style = "padding:5px; background-color: #999999";
+  document.getElementById('4').style = "padding:3px; background-color: #999999";
   ingresaDigito(4);
 }
 function pres5( ){
-  document.getElementById('5').style = "padding:5px; background-color: #999999";
+  document.getElementById('5').style = "padding:3px; background-color: #999999";
   ingresaDigito(5);
 }
 function pres6( ){
-  document.getElementById('6').style = "padding:5px; background-color: #999999";
+  document.getElementById('6').style = "padding:3px; background-color: #999999";
   ingresaDigito(6);
 }
 function pres7 ( ){
-  document.getElementById('7').style = "padding:5px; background-color: #999999";
+  document.getElementById('7').style = "padding:3px; background-color: #999999";
   ingresaDigito(7);
 }
 function pres8( ){
-  document.getElementById('8').style = "padding:5px; background-color: #999999";
+  document.getElementById('8').style = "padding:3px; background-color: #999999";
   ingresaDigito(8);
 }
 function pres9( ){
-  document.getElementById('9').style = "padding:5px; background-color: #999999";
+  document.getElementById('9').style = "padding:3px; background-color: #999999";
   ingresaDigito(9);
 }
 function pres0( ){
-  document.getElementById('0').style = "padding:5px; background-color: #999999";
+  document.getElementById('0').style = "padding:3px; background-color: #999999";
   ingresaDigito(0);
 }
 function presSign( ){
-  document.getElementById('sign').style = "padding:5px; background-color: #999999";
+  document.getElementById('sign').style = "padding:3px; background-color: #999999";
   operador = operador * (-1);
   document.querySelector("#calculadoraFondo #display").innerHTML = operador;
 }
 function presReset() {
+  document.getElementById('on').style = "padding:3px; background-color: #999999";
   operacion = '';
   resultado = 0;
   operador  = 0;
@@ -108,25 +109,25 @@ function calculaResultado(){
 }
 
 function presMas(){
-  document.getElementById('mas' ).style = "padding:5px; background-color: #999999";
+  document.getElementById('mas' ).style = "padding:1px; background-color: #999999";
   calculaResultado();
   operacion = '+';
 }
 
 function presMenos(){
-  document.getElementById('menos' ).style = "padding:5px; background-color: #999999";
+  document.getElementById('menos' ).style = "padding:3px; background-color: #999999";
   calculaResultado();
   operacion = '-';
 }
 
 function presPor(){
-  document.getElementById('por' ).style = "padding:5px; background-color: #999999";
+  document.getElementById('por' ).style = "padding:3px; background-color: #999999";
   calculaResultado();
   operacion = '*';
 }
 
 function presDiv(){
-  document.getElementById('dividido' ).style = "padding:5px; background-color: #999999";
+  document.getElementById('dividido' ).style = "padding:3px; background-color: #999999";
   calculaResultado();
   operacion = '/';
 }
@@ -135,7 +136,7 @@ function presRaiz(){
 }
 
 function presIgual(){
-  document.getElementById('igual').style = "padding:5px; background-color: #999999";
+  document.getElementById('igual').style = "padding:3px; background-color: #999999";
   calculaResultado();
   operacion = '';
   operador = resultado;
@@ -188,32 +189,6 @@ function presionaTecla(event) {
 
   }
 }
-
-function presionaTecla2(event){
-  tecla=event.wich||event.keyCode;
-  switch ( String.fromCharCode(tecla) ) {
-    case '0': pres0(); depres0(); break;
-    case '1': pres1(); depres1(); break;
-    case '2': pres2(); depres2(); break;
-    case '3': pres3(); depres3(); break;
-    case '4': pres4(); depres4(); break;
-    case '5': pres5(); depres5(); break;
-    case '6': pres6(); depres6(); break;
-    case '7': pres7(); depres7(); break;
-    case '8': pres8(); depres8(); break;
-    case '9': pres9(); depres9(); break;
-    case '+': presMas(); depresMas(); break;
-    case '-': presMenos(); depresMenos(); break;
-    case '*': presPor(); depresPor(); break;
-    case '/': presDiv(); depresDiv(); break;
-    case '=': presIgual(); depresIgual(); break;
-    case '.': presPunto(); depresPunto(); break;
-    case '': presReset(); depresReset(); break;
-
-  }
-}
-
-
 
 // presion de mouse...
 
