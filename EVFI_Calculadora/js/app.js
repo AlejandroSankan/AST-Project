@@ -5,6 +5,9 @@ var operador  = 0;
 var entero = 10;
 var decimal = 1;
 
+// variables para la duplicidad de igual
+var operadorAnt = 0;
+var operacionAnt = "";
 
 // eventos de mouse o teclado.
 function presPunto( ){
@@ -92,7 +95,10 @@ function limpiar() { // cuando se inytroduce una operacion
   document.querySelector("#calculadoraFondo #display").innerHTML = operador;
 }
 
+// Calculos
+
 function calculaResultado(){
+
   if (operacion != '') {
     resultado = eval( resultado + operacion + operador );
     if ( resultado.toString().length > 8) {
@@ -112,32 +118,53 @@ function presMas(){
   document.getElementById('mas' ).style = "padding:1px; background-color: #999999";
   calculaResultado();
   operacion = '+';
+  operacionAnt = '';
+  operadorAnt = 0;
 }
 
 function presMenos(){
   document.getElementById('menos' ).style = "padding:3px; background-color: #999999";
   calculaResultado();
   operacion = '-';
+  operacionAnt = '';
+  operadorAnt = 0;
 }
 
 function presPor(){
   document.getElementById('por' ).style = "padding:3px; background-color: #999999";
   calculaResultado();
   operacion = '*';
+  operacionAnt = '';
+  operadorAnt = 0;
 }
 
 function presDiv(){
   document.getElementById('dividido' ).style = "padding:3px; background-color: #999999";
   calculaResultado();
   operacion = '/';
+  operacionAnt = '';
+  operadorAnt = 0;
+
 }
 
 function presRaiz(){
 }
 
 function presIgual(){
+
+  if ( operacionAnt != '') {
+    operador = operadorAnt;
+    operacion = operacionAnt;
+  }
+  else {
+    operacionAnt = operacion;
+    operadorAnt = operador;
+  }
+
   document.getElementById('igual').style = "padding:3px; background-color: #999999";
   calculaResultado();
+ // se guarda por si se repite el =
+
   operacion = '';
   operador = resultado;
 }
